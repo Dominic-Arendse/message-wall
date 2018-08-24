@@ -1,0 +1,1 @@
+<title>{{ config('app.name') }} @if(isset($pageTitle) && !is_null($pageTitle))- {{ $pageTitle }}@endif</title>
