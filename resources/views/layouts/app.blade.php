@@ -4,9 +4,9 @@
     @section('head')
       @include('layouts.head.meta')
       
-      @include('layouts.head.google')
-
       @include('layouts.head.cdn')
+
+      @include('layouts.head.google')
 
       @section('styles-default')
         @include('layouts.head.styles.default')

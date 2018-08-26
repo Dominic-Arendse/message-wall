@@ -42,7 +42,8 @@ class HomeController extends Controller
    *
    * @return string
    */
-	private function generatePlaceholder() {
+	private function generatePlaceholder()
+	{
 		$placeholders = [
 			'Say something awesome!',
 			'What\'s on your mind?',
