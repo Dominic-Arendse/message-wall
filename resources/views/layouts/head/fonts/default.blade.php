@@ -1,11 +1,11 @@
 <style>
-  /*@font-face {
-    font-family: AnticSans;
-    src: url("{{ url('fonts/AnticSans-Regular.otf') }}");
-  }
-  
   @font-face {
-    font-family: RalewayThin;
-    src: url("{{ url('fonts/Raleway-Thin.ttf') }}");
-  }*/
+    font-family: Freshman;
+    src: url("{{ url('fonts/Freshman.ttf') }}");
+  }
+
+  @font-face {
+    font-family: SweetlyBroken;
+    src: url("{{ url('fonts/SweetlyBroken.ttf') }}");
+  }
 </style>

@@ -9,9 +9,12 @@
     width: 100vw;
     height: 100vh;
 
-    overflow: hidden;
+    overflow-x: hidden;
   }
 </style>
 
 {{-- Application Background --}}
 @include('layouts.head.styles.background.default')
+
+{{-- Home Page --}}
+@include('layouts.head.styles.home.default')
