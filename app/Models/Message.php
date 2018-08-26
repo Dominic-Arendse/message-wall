@@ -31,7 +31,7 @@ class Message
 		$messages = [];
 		
 		// Reads in the messages.csv file
-		$file = fopen(storage_path(self::$messagesFile), "r");
+		$file = fopen(storage_path(self::$messagesFile), "a+");
 		while ($line = fgetcsv($file, 100)) {
 			$messages[] = $line[0];
 		}
