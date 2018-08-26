@@ -11,22 +11,20 @@
 	</div>
 
 	<div class="row" style="text-align: center;">
-		<form name="recaptcha_form" action="{{ url('message') }}" method="PUT">
-			<div class="input-field col s8 offset-s2">
-        <input type="text" id="message" name="message" placeholder="{{ $placeholder }}" maxlength="70" style="display: block; margin-left: auto; margin-right: auto;">
-      </div>
+		<div class="input-field col s8 offset-s2">
+	    <input type="text" id="message" name="message" placeholder="{{ $placeholder }}" maxlength="70" style="display: block; margin-left: auto; margin-right: auto;">
+	  </div>
 
-      <div class="col s12">
-				<button type="submit" onclick="onSubmitForRecaptcha()" class="waves-effect waves-light btn red">
-					<i class="material-icons">create</i>
-				</button>
-			</div>
-		</form>
+	  <div class="col s12">
+			<button type="button" onclick="onSubmitForRecaptcha()" class="waves-effect waves-light btn red">
+				<i class="material-icons">create</i>
+			</button>
+		</div>
 	</div>
 
 	<div id="messages" class="row">
 		<div class="col s10 offset-s1">
-			<ul>
+			<ul id="messages_list">
 			@foreach($messages as $message)
 				<li>
 				  <a href="#">
